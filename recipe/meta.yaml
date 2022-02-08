@@ -11,18 +11,18 @@ source:
   sha256: 1297ae770a9bb8b1d7d5c28a40709d4701f35292d933d8e5956ac897338f895d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - setuptools_scm
     - toml
   run:
-    - python >=3.6
+    - python >=3.7
 
 test:
   imports:
