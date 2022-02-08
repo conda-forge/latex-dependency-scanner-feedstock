@@ -1,5 +1,5 @@
 {% set name = "latex-dependency-scanner" %}
-{% set version = "0.0.4" %}
+{% set version = "0.1.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/latex_dependency_scanner-{{ version }}.tar.gz
-  sha256: e8dcb3418bec840b31a1511f708d01484f4bbd27f49a35c4499b687f355324d1
+  sha256: 1297ae770a9bb8b1d7d5c28a40709d4701f35292d933d8e5956ac897338f895d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
