@@ -18,11 +18,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
-    - setuptools_scm
-    - toml
+    - python >=3.8
+    - hatchling
+    - hatch-vcs
   run:
-    - python >=3.7
+    - python >=3.8
 
 test:
   imports:
